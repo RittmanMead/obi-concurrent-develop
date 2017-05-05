@@ -622,6 +622,8 @@ def main():
 			finish_hotfix(NAME, NAME)
 		else:
 			finish_hotfix(NAME, TAG)
+	elif ACTION == 'bugfix':
+		bugfix(NAME)
 
 if __name__ == "__main__":
 	main()
