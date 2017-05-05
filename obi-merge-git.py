@@ -27,7 +27,7 @@ try:
 	# ArgumentParser to parse arguments and options
 	arg_parser = ArgumentParser(description="Rittman Mead RPD Git Merge Script \n(MP/RM Jul 2016)")
 	arg_parser.add_argument('action', choices=['startFeature', 'finishFeature', 'refreshFeature', 'startRelease',
-											   'finishRelease', 'startHotfix', 'finishHotfix'], help='Gitflow action.')
+											   'finishRelease', 'startHotfix', 'finishHotfix', 'bugfix'], help='Gitflow action.')
 	arg_parser.add_argument('name', help='Name of a feature, release or hotfix depending on the action chosen.')
 	arg_parser.add_argument('-p', '--push', action="store_true", default=False, help='Push directly to origin.')
 	arg_parser.add_argument('-a', '--autoOpen', action="store_true", default=False,
